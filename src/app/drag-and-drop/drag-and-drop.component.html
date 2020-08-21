@@ -1,0 +1,129 @@
+<div class="box">
+  <div class="member-box">
+    <div class="example-container">
+      <div
+        cdkDropList
+        #oneList="cdkDropList"
+        [cdkDropListData]="one"
+        [cdkDropListConnectedTo]="[
+          twoList,
+          threeList,
+          fourList,
+          fiveList,
+          sixList
+        ]"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <div class="example-box" *ngFor="let member of one" cdkDrag>
+          {{ member }}
+        </div>
+      </div>
+    </div>
+
+    <div class="example-container">
+      <div
+        cdkDropList
+        #twoList="cdkDropList"
+        [cdkDropListData]="two"
+        [cdkDropListConnectedTo]="[
+          oneList,
+          threeList,
+          fourList,
+          fiveList,
+          sixList
+        ]"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <div class="example-box" *ngFor="let member of two" cdkDrag>
+          {{ member }}
+        </div>
+      </div>
+    </div>
+
+    <div class="example-container">
+      <div
+        cdkDropList
+        #threeList="cdkDropList"
+        [cdkDropListData]="three"
+        [cdkDropListConnectedTo]="[
+          oneList,
+          twoList,
+          fourList,
+          fiveList,
+          sixList
+        ]"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <div class="example-box" *ngFor="let member of three" cdkDrag>
+          {{ member }}
+        </div>
+      </div>
+    </div>
+
+    <div class="example-container">
+      <div
+        cdkDropList
+        #fourList="cdkDropList"
+        [cdkDropListData]="four"
+        [cdkDropListConnectedTo]="[
+          oneList,
+          twoList,
+          threeList,
+          fiveList,
+          sixList
+        ]"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <div class="example-box" *ngFor="let member of four" cdkDrag>
+          {{ member }}
+        </div>
+      </div>
+    </div>
+
+    <div class="example-container">
+      <div
+        cdkDropList
+        #fiveList="cdkDropList"
+        [cdkDropListData]="five"
+        [cdkDropListConnectedTo]="[
+          oneList,
+          twoList,
+          threeList,
+          fourList,
+          sixList
+        ]"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <div class="example-box" *ngFor="let member of five" cdkDrag>
+          {{ member }}
+        </div>
+      </div>
+    </div>
+
+    <div class="example-container">
+      <div
+        cdkDropList
+        #sixList="cdkDropList"
+        [cdkDropListData]="six"
+        [cdkDropListConnectedTo]="[
+          oneList,
+          twoList,
+          threeList,
+          fourList,
+          fiveList
+        ]"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <div class="example-box" *ngFor="let member of six" cdkDrag>
+          {{ member }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
