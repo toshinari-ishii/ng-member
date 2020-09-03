@@ -1,16 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  CdkDragDrop,
-  moveItemInArray,
-  transferArrayItem,
-} from '@angular/cdk/drag-drop';
-import { DraganddropService } from '../draganddrop.service';
+import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
+
 
 @Component({
   selector: 'app-drag-and-drop',
   templateUrl: './drag-and-drop.component.html',
-  styleUrls: ['./drag-and-drop.component.css'],
+  styleUrls: ['./drag-and-drop.component.css']
 })
+
 export class DragAndDropComponent {
   one = ['大城 賢剛', '福士 義和'];
   two = ['新川 盛幸', '仲里 淳矢'];
@@ -37,15 +34,5 @@ export class DragAndDropComponent {
   }
 }
 
-// infosysMembers = [
-//   '福士 義和',
-//   '仲里 淳矢',
-//   '高良 真也',
-//   '徳元 拓真',
-//   '新川 盛幸',
-//   '金城 裕也',
-//   '具志 直',
-//   '大城 賢剛',
-//   '宮里 優希',
-//   '石井 俊成',
-// ];
+
+export class DragAndDropComponent {}

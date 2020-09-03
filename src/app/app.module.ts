@@ -2,19 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DragDropModule } from '@angular/cdk/drag-drop';
-import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import {ragDropModule} from '@angular/cdk/drag-drop';
+import { DragAndDropComponent } from "./drag-and-drop/drag-and-drop.component";
 
 @NgModule({
-  declarations: [AppComponent, DragAndDropComponent],
+  declarations: [
+    AppComponent,
+    DragAndDropComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    DragDropModule,
-    FlexLayoutModule,
+    DragDropModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
