@@ -19,10 +19,6 @@ export class DragAndDropComponent {
   five = ['宮里 優希', '具志 直'];
   six = ['テックキッズ', 'テックキッズ'];
 
-  getdraganddrop(): void {
-    this.draganddrop = this.draganddropService.getdraganddrop();
-  }
-
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
       moveItemInArray(
