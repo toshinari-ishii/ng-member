@@ -33,6 +33,3 @@ export class DragAndDropComponent {
     }
   }
 }
-
-
-export class DragAndDropComponent {}

@@ -13,7 +13,7 @@ import { DragAndDropComponent } from "./drag-and-drop/drag-and-drop.component";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragAndDropComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
