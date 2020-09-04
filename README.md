@@ -25,3 +25,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+<a href="https://codeclimate.com/github/toshinari-ishii/ng-member/maintainability"><img src="https://api.codeclimate.com/v1/badges/7e84cee5394204b3f2d9/maintainability" /></a>
